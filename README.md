@@ -20,7 +20,7 @@ struct ContentView: View {
 struct ContentView: View {
     var body: some View {
         CenteredVStack {
-            \\ Add content here
+            // Add content here
         }
     }
 }
