@@ -95,7 +95,7 @@ public struct CenteredHStack<Content: View>: View {
     let spacing: CGFloat?
     let content: Content
 
-    init(alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder _ content: () -> Content) {
+    public init(alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder _ content: () -> Content) {
         self.alignment = alignment
         self.spacing = spacing
         self.content = content()
@@ -123,7 +123,7 @@ public struct CenteredVStack<Content: View>: View {
     let spacing: CGFloat?
     let content: Content
 
-    init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder _ content: () -> Content) {
+    public init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder _ content: () -> Content) {
         self.alignment = alignment
         self.spacing = spacing
         self.content = content()
