@@ -68,7 +68,7 @@ private struct Centered: ViewModifier {
     @Environment(\.parentContainer) var parentContainer
 
     func body(content: Content) -> some View {
-        print(self.parentContainer)
+        // print(self.parentContainer)
         switch self.parentContainer {
         case .hStack:
             return AnyView(content.alignmentGuide(HorizontalAlignment.centered) { d in
