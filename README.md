@@ -2,7 +2,7 @@
 
 ![banner](https://github.com/atlou/CenteredStack/assets/30378214/87bded54-3772-4102-a353-6e9bd3655e9c)
 
-SwiftUI does not allow for a child of an `HStack` or a `VStack` to be centered. This package provides a solution to this problem.
+SwiftUI does not allow for a child of an `HStack` or a `VStack` to be centered. This package aims to provide a solution to this problem.
 
 ## Get Started
 1. Add the `CenteredStack` package to your Xcode project.
