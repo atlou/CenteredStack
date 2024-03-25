@@ -84,13 +84,13 @@ private struct Centered: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     func centered() -> some View {
         modifier(Centered())
     }
 }
 
-struct CenteredHStack<Content: View>: View {
+public struct CenteredHStack<Content: View>: View {
     let alignment: VerticalAlignment
     let spacing: CGFloat?
     let content: Content
@@ -101,7 +101,7 @@ struct CenteredHStack<Content: View>: View {
         self.content = content()
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .horizontallyCentered) {
             Color.clear
                 .frame(height: 0)
@@ -118,7 +118,7 @@ struct CenteredHStack<Content: View>: View {
     }
 }
 
-struct CenteredVStack<Content: View>: View {
+public struct CenteredVStack<Content: View>: View {
     let alignment: HorizontalAlignment
     let spacing: CGFloat?
     let content: Content
@@ -129,7 +129,7 @@ struct CenteredVStack<Content: View>: View {
         self.content = content()
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: .verticallyCentered) {
             Color.clear
                 .frame(width: 0)
